@@ -1,0 +1,20 @@
+# Requirements untuk app5.py — Fatigue Detection (Deteksi Kantuk)
+# Python yang didukung: 3.9 – 3.11 (diuji dengan 3.10.13)
+#
+# Install:
+#   python3 -m venv .venv
+#   source .venv/bin/activate          # Linux/macOS
+#   .venv\Scripts\activate             # Windows
+#   pip install -r requirements-app5.txt
+
+# ─── Computer Vision ──────────────────────────────────────────────────────────
+opencv-python>=4.8,<5.0
+
+# ─── Numerik ──────────────────────────────────────────────────────────────────
+numpy>=1.24,<2.0
+
+# ─── Deep Learning ────────────────────────────────────────────────────────────
+# Untuk macOS Apple Silicon (M1/M2/M3/M4), gunakan tensorflow-macos + tensorflow-metal:
+#   pip install tensorflow-macos tensorflow-metal
+# Untuk CPU-only Linux/Windows:
+tensorflow>=2.12,<2.17
